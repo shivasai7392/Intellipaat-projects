@@ -1,0 +1,32 @@
+digraph Tree {
+node [shape=box, style="filled", color="black"] ;
+0 [label="cp <= 0.5\ngini = 0.494\nsamples = 212\nvalue = [94, 118]\nclass = male", fillcolor="#399de534"] ;
+1 [label="ca <= 0.5\ngini = 0.415\nsamples = 102\nvalue = [72, 30]\nclass = Female", fillcolor="#e5813995"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="thal <= 2.5\ngini = 0.492\nsamples = 48\nvalue = [21, 27]\nclass = male", fillcolor="#399de539"] ;
+1 -> 2 ;
+3 [label="gini = 0.328\nsamples = 29\nvalue = [6, 23]\nclass = male", fillcolor="#399de5bc"] ;
+2 -> 3 ;
+4 [label="gini = 0.332\nsamples = 19\nvalue = [15, 4]\nclass = Female", fillcolor="#e58139bb"] ;
+2 -> 4 ;
+5 [label="age <= 63.5\ngini = 0.105\nsamples = 54\nvalue = [51, 3]\nclass = Female", fillcolor="#e58139f0"] ;
+1 -> 5 ;
+6 [label="gini = 0.0\nsamples = 43\nvalue = [43, 0]\nclass = Female", fillcolor="#e58139ff"] ;
+5 -> 6 ;
+7 [label="gini = 0.397\nsamples = 11\nvalue = [8, 3]\nclass = Female", fillcolor="#e581399f"] ;
+5 -> 7 ;
+8 [label="oldpeak <= 1.95\ngini = 0.32\nsamples = 110\nvalue = [22, 88]\nclass = male", fillcolor="#399de5bf"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="thalach <= 152.5\ngini = 0.255\nsamples = 100\nvalue = [15, 85]\nclass = male", fillcolor="#399de5d2"] ;
+8 -> 9 ;
+10 [label="gini = 0.438\nsamples = 34\nvalue = [11, 23]\nclass = male", fillcolor="#399de585"] ;
+9 -> 10 ;
+11 [label="gini = 0.114\nsamples = 66\nvalue = [4, 62]\nclass = male", fillcolor="#399de5ef"] ;
+9 -> 11 ;
+12 [label="slope <= 0.5\ngini = 0.42\nsamples = 10\nvalue = [7, 3]\nclass = Female", fillcolor="#e5813992"] ;
+8 -> 12 ;
+13 [label="gini = 0.0\nsamples = 3\nvalue = [0, 3]\nclass = male", fillcolor="#399de5ff"] ;
+12 -> 13 ;
+14 [label="gini = 0.0\nsamples = 7\nvalue = [7, 0]\nclass = Female", fillcolor="#e58139ff"] ;
+12 -> 14 ;
+}
